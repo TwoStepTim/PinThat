@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/377f518282.js" crossorigin="anonymous"></script></head>
+<body>
+    <!-- Navigation Bar (Desktop) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-none d-lg-block">
+        <div class="container-fluid">
+            <!-- Logo on the Left -->
+            <a class="navbar-brand" href="#">
+                <img src="pin.png" alt="Logo" width="40" height="40">
+            </a>
+            <!-- Centered Tabs -->
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Boards</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- User Icon on the Right -->
+            <a class="navbar-brand" href="#">
+                <img src="image.png" alt="User Icon" class="user-icon" width="40" height="40">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Horizontal Scroll for Boards (Mobile) -->
+    <div class="board-scroll d-lg-none">
+        <div class="scroll-container">
+            <a href="index.html" class="board-link">
+                <i class="fas fa-book"></i> Collage Life
+            </a>
+            <a href="#" class="board-link">
+                <i class="fas fa-dumbbell"></i> Fitness
+            </a>
+            <a href="#" class="board-link">
+                <i class="fas fa-camera"></i> Photography
+            </a>
+            <a href="#" class="board-link">
+                <i class="fas fa-code"></i> Coding
+            </a>
+            <a href="#" class="board-link">
+                <i class="fas fa-music"></i> Music
+            </a>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation Bar (Mobile) -->
+    <nav class="navbar fixed-bottom navbar-light bg-light d-lg-none">
+        <div class="container-fluid d-flex justify-content-around">
+            <a href="index.html" class="nav-link text-center">
+                <i class="fas fa-home"></i>
+                <span class="d-block">Home</span>
+            </a>
+           
+            <a href="#" class="nav-link text-center">
+                <i class="fas fa-plus-circle"></i>
+                <span class="d-block">Add</span>
+            </a>
+
+            <a href="explore.html" class="nav-link text-center">
+                <i class="fas fa-search"></i>
+                <span class="d-block">Explore</span>
+            </a>
+            <a href="profile.html" class="nav-link text-center">
+                <i class="fas fa-user"></i>
+                <span class="d-block">Profile</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="board-header">
+            <h1 class="board-title">Collage Life</h1>
+            <p class="board-description">A collection of posts about everyday moments and life in college.</p>
+        </div>
+        
+        <div class="row" id="pinboard">
+            <!-- Card 1 -->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4"> <!-- Updated grid classes for mobile -->
+                <div class="card">
+                    <div class="card-header d-flex align-items-center">
+                        <img src="image.png" alt="Profile Picture" class="profile-pic me-2">
+                        <span class="name">User Name</span>
+                        <span class="time ms-auto">3:00 PM</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">09/13/2024</div>
+                        <div class="card-message">This is a sample message for the pinboard. It can be longer or shorter depending on the user input.</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4"> <!-- Updated grid classes for mobile -->
+                <div class="card">
+                    <div class="card-header d-flex align-items-center">
+                        <img src="image.png" alt="Profile Picture" class="profile-pic me-2">
+                        <span class="name">User Name</span>
+                        <span class="time ms-auto">3:00 PM</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">09/13/2024</div>
+                        <div class="card-message">
+                            This is a sample message for the pinboard. It can be longer or shorter depending on the user input. 
+                            More content here to test the long message wrappingThis is a sample message for the pinboard.This is a sample message for the pinboard.This is a sample message for the pinboard.This is a sample message for the pinboard.This is a sample message for the pinboard.This is a sample message for the pinboard.This is a sample message for the pinboard.This is a sample message for the pinboard.This is a sample message for the pinboard.This is a sample message for the pinboard..
+                        </div>
+                        <div class="card-image mt-3">
+                            <img src="waketech.png" alt="Post Image" class="img-fluid post-image" onclick="openLightbox(this)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4"> <!-- Updated grid classes for mobile -->
+                <div class="card">
+                    <div class="card-header d-flex align-items-center">
+                        <img src="image.png" alt="Profile Picture" class="profile-pic me-2">
+                        <span class="name">User Name</span>
+                        <span class="time ms-auto">3:00 PM</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">09/13/2024</div>
+                        <div class="card-image mt-3">
+                            <img src="waketech.png" alt="Post Image" class="img-fluid post-image" onclick="openLightbox(this)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4"> <!-- Updated grid classes for mobile -->
+                <div class="card">
+                    <div class="card-header d-flex align-items-center">
+                        <img src="image.png" alt="Profile Picture" class="profile-pic me-2">
+                        <span class="name">User Name</span>
+                        <span class="time ms-auto">3:00 PM</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">09/13/2024</div>
+                        <div class="card-image mt-3">
+                            <img src="waketech.png" alt="Post Image" class="img-fluid post-image" onclick="openLightbox(this)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4"> <!-- Updated grid classes for mobile -->
+                <div class="card">
+                    <div class="card-header d-flex align-items-center">
+                        <img src="image.png" alt="Profile Picture" class="profile-pic me-2">
+                        <span class="name">User Name</span>
+                        <span class="time ms-auto">3:00 PM</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">09/13/2024</div>
+                        <div class="card-image mt-3">
+                            <img src="waketech.png" alt="Post Image" class="img-fluid post-image" onclick="openLightbox(this)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4"> <!-- Updated grid classes for mobile -->
+                <div class="card">
+                    <div class="card-header d-flex align-items-center">
+                        <img src="image.png" alt="Profile Picture" class="profile-pic me-2">
+                        <span class="name">User Name</span>
+                        <span class="time ms-auto">3:00 PM</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">09/13/2024</div>
+                        <div class="card-image mt-3">
+                            <img src="waketech.png" alt="Post Image" class="img-fluid post-image" onclick="openLightbox(this)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4"> <!-- Updated grid classes for mobile -->
+                <div class="card">
+                    <div class="card-header d-flex align-items-center">
+                        <img src="image.png" alt="Profile Picture" class="profile-pic me-2">
+                        <span class="name">User Name</span>
+                        <span class="time ms-auto">3:00 PM</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">09/13/2024</div>
+                        <div class="card-image mt-3">
+                            <img src="waketech.png" alt="Post Image" class="img-fluid post-image" onclick="openLightbox(this)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4"> <!-- Updated grid classes for mobile -->
+                <div class="card">
+                    <div class="card-header d-flex align-items-center">
+                        <img src="image.png" alt="Profile Picture" class="profile-pic me-2">
+                        <span class="name">User Name</span>
+                        <span class="time ms-auto">3:00 PM</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">09/13/2024</div>
+                        <div class="card-image mt-3">
+                            <img src="waketech.png" alt="Post Image" class="img-fluid post-image" onclick="openLightbox(this)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Lightbox Modal (same as before) -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <div class="row">
+            <div class="col-12 text-center mt-5">
+                <img class="lightbox-content" id="lightbox-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Masonry JS for Pinterest-style layout -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <!-- JavaScript for Lightbox (same as before) -->
+ 
+    
+    <script>
+        var grid = document.querySelector('#pinboard');
+        var msnry = new Masonry(grid, {
+            itemSelector: '.col-lg-4', /* Only apply Masonry on desktop */
+            percentPosition: true,
+        });
+
+        // Open Lightbox
+        function openLightbox(img) {
+            var lightbox = document.getElementById('lightbox');
+            var lightboxImg = document.getElementById('lightbox-img');
+            if (img && img.src) {
+                lightboxImg.src = img.src;
+                lightbox.style.display = "flex";
+            }
+        }
+
+        // Close Lightbox
+        function closeLightbox() {
+            var lightbox = document.getElementById('lightbox');
+            lightbox.style.display = "none";
+        }
+
+        window.onload = function() {
+            closeLightbox();
+        }
+    </script>
+</body>
+</html>

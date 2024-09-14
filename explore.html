@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/377f518282.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation Bar (Desktop) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-none d-lg-block">
+        <div class="container-fluid">
+            <!-- Logo on the Left -->
+            <a class="navbar-brand" href="#">
+                <img src="pin.png" alt="Logo" width="40" height="40">
+            </a>
+            <!-- Centered Tabs -->
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="explore.html">Explore</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- User Icon on the Right -->
+            <a class="navbar-brand" href="#">
+                <img src="image.png" alt="User Icon" class="user-icon" width="40" height="40">
+            </a>
+        </div>
+    </nav>
+
+    
+    <!-- Bottom Navigation Bar (Mobile) -->
+    <nav class="navbar fixed-bottom navbar-light bg-light d-lg-none">
+        <div class="container-fluid d-flex justify-content-around">
+            <a href="home.html" class="nav-link text-center">
+                <i class="fas fa-home"></i>
+                <span class="d-block">Home</span>
+            </a>
+            <a href="explore.html" class="nav-link text-center">
+                <i class="fas fa-search"></i>
+                <span class="d-block">Explore</span>
+            </a>
+            <a href="#" class="nav-link text-center">
+                <i class="fas fa-plus-circle"></i>
+                <span class="d-block">Add</span>
+            </a>
+            <a href="profile.css" class="nav-link text-center">
+                <i class="fas fa-user"></i>
+                <span class="d-block">Profile</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Explore Page Content -->
+    <div class="container mt-4">
+        <div class="board-header">
+            <h1 class="board-title">Explore</h1>
+            <p class="board-description">Discover new boards and dive into topics you're passionate about.</p>
+        </div>
+        
+        <!-- 2x2 Grid of Boards -->
+        <div class="row">
+            <!-- Board 1 (Collage Life) -->
+            <div class="col-sm-6 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-book fa-3x mb-3"></i>
+                        <h5 class="card-title">Collage Life</h5>
+                        <p class="card-text">Explore the everyday moments and experiences in collage life.</p>
+                        <button onclick="window.location.href='index.html'" class="btn btn-primary">View Board</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Board 2 -->
+            <div class="col-sm-6 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-dumbbell fa-3x mb-3"></i>
+                        <h5 class="card-title">Fitness</h5>
+                        <p class="card-text">Find workout routines and fitness tips to stay in shape.</p>
+                        <button class="btn btn-primary">View Board</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Board 3 -->
+            <div class="col-sm-6 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-camera fa-3x mb-3"></i>
+                        <h5 class="card-title">Photography</h5>
+                        <p class="card-text">Capture moments and learn new photography techniques.</p>
+                        <button class="btn btn-primary">View Board</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Board 4 -->
+            <div class="col-sm-6 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-code fa-3x mb-3"></i>
+                        <h5 class="card-title">Coding</h5>
+                        <p class="card-text">Learn coding tips and tricks for various programming languages.</p>
+                        <button class="btn btn-primary">View Board</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
